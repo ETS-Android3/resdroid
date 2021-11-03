@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.restoranyonetici">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Resdroid"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RestoranYonetici">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YSiparisler" />
+        <activity android:name=".YYonetici"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".KGiris" />
+        <activity android:name=".YGiris" />
+        <activity android:name=".KGenelSiparisEkrani" />
+        <activity android:name=".KAnasayfa" />
+        <activity android:name=".YMNYemekler"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".YMNKategoriler"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".YMenu" />
+        <activity android:name=".YMasa"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".YGarson"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Giris">
+       </activity>
+        <activity android:name=".YAnasayfa" />
+    </application>
+
+</manifest>

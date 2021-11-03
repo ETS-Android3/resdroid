@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_yonetici"
+    tools:context=".YGarson">
+
+
+    <Button
+        android:id="@+id/YG_btn_sil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YG_tbx_sifre"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/YG_btn_guncelle"
+        android:drawableLeft="@drawable/ic_delete"
+        android:text="sil"
+        app:backgroundTint="#F44336"
+        app:layout_constraintBottom_toTopOf="@+id/YG_lv_bilgiler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/YG_btn_guncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YG_tbx_sifre"
+        android:layout_toEndOf="@+id/YG_btn_ekle"
+        android:drawableLeft="@drawable/ic_update"
+        android:text="guncelle"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toTopOf="@+id/YG_lv_bilgiler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.861" />
+
+    <Button
+        android:id="@+id/YG_btn_ekle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YG_tbx_sifre"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:drawableLeft="@drawable/ic_add"
+        android:text="ekle"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/YG_lv_bilgiler"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.86" />
+
+    <EditText
+        android:id="@+id/YG_tbx_adi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Garson adı"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/YG_tbx_sifre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/YG_tbx_adi"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="136dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Şifre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/YG_lv_bilgiler"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_below="@+id/YG_btn_guncelle"
+        android:layout_alignParentStart="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_k_gse"
+    tools:context=".KGenelSiparisEkrani">
+
+    <Button
+        android:id="@+id/K_GSE_btn_urunekle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/K_GSE_lv_siparisler"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="ekle"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/K_GSE_lv_siparisler" />
+
+    <Button
+        android:id="@+id/K_GSE_btn_kapat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/K_GSE_btn_urunsil"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_toEndOf="@+id/K_GSE_btn_onayla"
+        android:drawableLeft="@drawable/ic_kapat"
+        android:text="kapat"
+        android:textSize="12sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/K_GSE_btn_urunsil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/K_GSE_lv_siparisler"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/K_GSE_btn_urunekle"
+        android:text="sil"
+        app:backgroundTint="#F44336"
+        app:layout_constraintStart_toEndOf="@+id/K_GSE_btn_urunekle"
+        app:layout_constraintTop_toBottomOf="@+id/K_GSE_lv_siparisler" />
+
+    <Button
+        android:id="@+id/K_GSE_btn_onayla"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_below="@+id/K_GSE_btn_urunsil"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:drawableLeft="@drawable/ic_ok"
+        android:text="onayla"
+        android:textSize="12sp"
+        app:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/K_GSE_btn_adet"
+        android:layout_width="58dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="115dp"
+        android:text="Seç"
+        android:textSize="10sp"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/K_GSE_lv_siparisler"
+        android:layout_width="0dp"
+        android:layout_height="292dp"
+        android:layout_alignParentStart="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/K_GSE_sp_kategoriler"
+        android:layout_width="155dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/K_GSE_lbl_masaadi"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="65dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/K_GSE_sp_yemekler"
+        android:layout_width="155dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/K_GSE_lbl_masaadi"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/K_GSE_sp_kategoriler"
+        app:layout_constraintBottom_toBottomOf="@+id/K_GSE_sp_kategoriler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/K_GSE_sp_kategoriler" />
+
+    <TextView
+        android:id="@+id/K_GSE_lbl_masaadi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="Masa: "
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/K_GSE_lbl_toplamfiyat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/K_GSE_btn_urunsil"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:layout_toEndOf="@+id/K_GSE_btn_kapat"
+        android:text="TOPLAM: 0TL"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/K_GSE_btn_urunsil"
+        app:layout_constraintTop_toBottomOf="@+id/K_GSE_lv_siparisler" />
+
+    <TextView
+        android:id="@+id/K_GSE_tbx_adet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Adet: 1"
+        android:textColor="#FDFDFD"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

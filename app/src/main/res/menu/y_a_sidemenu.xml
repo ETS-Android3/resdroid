@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/sb_menu"
+        android:title="Menü"
+        android:icon="@drawable/menu"/>
+    <item android:id="@+id/sb_garson"
+        android:title="Garson"
+        android:icon="@drawable/menuwaiter"/>
+    <item android:id="@+id/sb_masa"
+        android:title="Masa"
+        android:icon="@drawable/chair"/>
+    <item android:id="@+id/sb_siparis"
+        android:title="Sipariş"
+        android:icon="@drawable/clipboard"/>
+    <item android:id="@+id/sb_yonetici"
+        android:title="Yönetici"
+        android:icon="@drawable/managers"/>
+</menu>

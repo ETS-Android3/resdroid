@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "613402274584",
+    "project_id": "restoranyonetici",
+    "storage_bucket": "restoranyonetici.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613402274584:android:5791a904f292df30fdcc6d",
+        "android_client_info": {
+          "package_name": "com.example.restoranyonetici"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613402274584-je9ipc3j2nr18q9eibi6bve56povkdpa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMxTrMxK7Kh5OxVQcU1bhXo25Kn404t-M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613402274584-je9ipc3j2nr18q9eibi6bve56povkdpa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
