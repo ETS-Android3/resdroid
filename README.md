@@ -1,7 +1,7 @@
 # Resdroid
 
 <p align="center">
-  <img src="./images/logo.png" width="25%"> 
+  <img src="./images/logo.png" width="30%"> 
 </p>
 
 
